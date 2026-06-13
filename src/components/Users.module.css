@@ -1,0 +1,72 @@
+.loading{padding: 40px;}
+
+.loadingLight{color: #111;}
+
+.loadingDark{color: white;}
+
+.error{padding: 40px;
+       color: red;}
+
+.outerWrapper{
+    padding: 40px;
+}
+
+.outerWrapperLight{background-color: #ffffff;
+}
+
+.outerWrapperDark{background-color: #1a1a1a;
+}
+
+.title{margin-bottom: 20px;}
+
+.titleLight{color: #111;}
+
+.titleDark{color: white;}
+
+.innerWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.userId{padding: 20px;
+        flex: 1;
+        min-width: 200px;
+        border: 2px solid #00bcd4;
+        border-radius: 8px;
+
+}
+.userIdLight{background-color:#f0f0f0;
+             color: #111;}
+
+.userIdDark{background-color: #111;
+            color: white;
+}
+
+.userEmail{
+    margin-top: 8px;
+    color: #00bcd4;
+}
+
+.userCompName{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.userCompNameLight{color: #555;}
+
+.userCompNameDark{color: #aaa;}
+
+@media (max-width:760px){
+    .outerWrapper{
+        padding: 25px;
+    }
+
+}
+
+@media (max-width: 480px){
+    .outerWrapper{
+        padding: 15px;
+    }
+    
+}

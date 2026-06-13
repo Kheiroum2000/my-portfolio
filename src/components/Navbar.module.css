@@ -1,0 +1,77 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navlinks {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00bcd4;
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.toggleBtn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.toggleBtn:hover {
+    background-color: #00bcd4;
+    color: white;
+    border-color: #00bcd4;
+}
+
+.dark {
+    background-color: #111111;
+}
+
+.light {
+    background-color: #f8f8f8;
+}
+
+.darkText {
+    color: white;
+}
+
+.lightText {
+    color: #111111;
+}

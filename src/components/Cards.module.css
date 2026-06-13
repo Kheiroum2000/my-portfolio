@@ -1,0 +1,82 @@
+.outerWrapper{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    padding:20px;
+}
+
+.outerWrapperLight{
+    background-color: #ffffff;
+}
+
+.outerWrapperDark{
+    background-color: #1a1a1a;
+}
+
+.individualCard{
+    display:grid;
+    grid-template-columns: 150px;
+    flex:1;
+    border:2px solid #00bcd4;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.individualCardLight{
+    background-color: #ffffff;
+    color: #111;
+}
+
+.individualCardDark{
+    background-color: #1a1a1a;
+    color: white;
+
+}
+
+.description{
+    margin-top: 8px;
+}
+
+.descriptionLight{
+    color: #555;
+}
+
+.descriptionDark{
+    color: #aaa;
+}
+
+.level{
+    margin-top:12px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 4px 10px;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .outerWrapper {
+        gap: 10px;
+    }
+    
+    .individualCard {
+        min-width: 40%;
+        flex: none;
+        padding: 20px;
+    }
+}
+@media (max-width: 480px){
+    .outerWrapper {
+        gap: 10px;
+    }
+
+    .individualCard {
+        min-width: 100%;
+        flex: none;
+        padding: 20px;
+    }
+}

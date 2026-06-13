@@ -1,0 +1,27 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+
+}
+
+.wrapperLight{ background-color: #f0f0f0;}
+
+.wrapperDark{ background-color: #1a1a1a;}
+
+.desc{font-size: 25px;}
+
+.descLight{ color: #1a1a1a;}
+
+.descDark{color: white;}
+
+@media(max-width:760px){
+    .desc{
+        font-size: 20px;
+    }
+}
+@media(max-width:480px){
+    .desc{
+        font-size: 15px;
+    }
+}

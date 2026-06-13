@@ -1,0 +1,136 @@
+.mainWrapper{
+    padding: 60px 40px;
+    min-height: 100vh;
+}
+
+.mainWrapperLight{
+    background-color: #ffffff;
+}
+
+.mainWrapperDark{
+    background-color: #1a1a1a;
+}
+
+.wrapperHero{
+    padding: 30px 30px;
+}
+
+.name{
+    font-size: 50px;
+}
+
+.nameLight{
+    color: #111;
+}
+
+.nameDark{
+    color: white;
+}
+
+.heroTitle{
+    font-size: 25px;
+}
+
+.heroTitleLight{
+    color: #111;
+}
+
+.heroTitleDark{
+    color: white;
+}
+
+.wrapperStory{
+    padding: 30px;
+}
+
+.storyTitle{
+    font-size: 25px;
+}
+
+.storyTitleLight{
+    color: #111;
+}
+
+.storyTitleDark{
+    color: white;
+}
+
+.storyDesc{
+    font-size: 18px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.storyDescLight{
+    color: #555;
+}
+
+.storyDescDark{
+    color: #aaa;
+}
+
+.wrapperSkills{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skillsTitle{
+    font-size: 25px;
+    width: 100%;
+}
+
+.skillsTitleLight{
+    color: #111;
+}
+
+.skillsTitleDark{
+    color: white;
+}
+
+.individualBadge{
+    padding: 4px 10px;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.wrapperGoals{
+    padding: 30px ;
+}
+
+.goalsTitle{
+    font-size: 25px;
+}
+
+.goalsTitleLight{
+    color: #111;
+}
+
+.goalsTitleDark{
+    color: white;
+}
+
+.goalsDesc{
+    font-size: 18px;
+}
+
+.goalsDescLight{
+    color: #555;
+}
+
+.goalsDescDark{
+    color: #aaa;
+}
+
+@media (max-width: 480px){
+    .name{
+        font-size: 40px;
+    }
+    .heroTitle{
+        font-size: 25px;
+    }
+}
