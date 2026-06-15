@@ -62,6 +62,8 @@ function Contact() {
       )
   }
 
+  // This comment is purposeless
+
   return (
     <div style={{ padding: '60px 40px',
     backgroundColor: darkMode ? '#1a1a1a' : '#ffffff',
