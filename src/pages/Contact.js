@@ -39,7 +39,7 @@ function Contact() {
 
     setSubmitted(true)
     
-  fetch('http://localhost:5000/contact', {
+  fetch('https://express-my-portfolio-production.up.railway.app/contact', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json'
