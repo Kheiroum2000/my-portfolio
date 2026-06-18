@@ -1,0 +1,33 @@
+.projectCardDark {
+    background-color: #111;
+    border: 1px solid #333;
+}
+
+.projectCardLight {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+.projectCard{
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+
+}
+
+.projectTitleLight {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.projectTitleDark {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.projectTitle {
+    font-size: 22px;
+    font-weight: bold;
+}
