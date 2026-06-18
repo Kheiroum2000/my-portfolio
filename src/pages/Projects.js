@@ -2,7 +2,6 @@ import { useContext } from 'react'
 import ThemeContext from '../ThemeContext'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { data } from 'react-router-dom'
 import styles from './Projects.module.css'
 
 function Projects() {
