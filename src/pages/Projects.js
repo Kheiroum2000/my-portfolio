@@ -22,6 +22,13 @@ function Projects() {
                 projectData.map((project)=>(
                     <div className={`${styles.projectCard} ${darkMode ? styles.projectCardDark : styles.projectCardLight}`} key={project.id}>
                         <h3 className={`${styles.projectTitle} ${darkMode ? styles.projectTitleDark : styles.projectTitleLight}`}>{project.project}</h3>
+                        <p className={`${styles.projectDes} ${darkMode ? styles.projectDesDark : styles.projectDesLight}`}>{project.description}</p>
+                        {project.techStack.map((tech) => (
+                            <span key={tech} className={`${styles.techBadge} ${darkMode ? styles.techBadgeDark : styles.techBadgeLight}`}>{tech}</span>
+                        ))}
+                        <a className={`${styles.githubLink}`} href={project.githubLink}>My GitHub Link</a>
+
+                        <a className={`${styles.liveLink}`} href={project.liveLink}>My Live link</a>
                     </div>
                 ))
             ) : (

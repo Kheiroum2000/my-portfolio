@@ -36,7 +36,7 @@ function About() {
   const [data, setData] = useState(null)
   
   useEffect(()=>{
-    fetch('http://localhost:5000/about')
+    fetch('https://express-my-portfolio-production.up.railway.app/about')
     .then(res => res.json())
     .then(data => setData(data));
     

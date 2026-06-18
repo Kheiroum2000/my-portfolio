@@ -29,3 +29,41 @@
     font-size: 22px;
     font-weight: bold;
 }
+
+.techBadgeLight{
+    color: #111;
+}
+
+.techBadgeDark{
+    color: #ddd;
+}
+
+.techBadge {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.projectDesLight{
+    color: #111;
+}
+
+.projectDesDark{
+    color: #ddd;
+}
+
+.projectDes{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.githubLink{
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.liveLink{
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+}
