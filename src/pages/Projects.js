@@ -3,6 +3,8 @@ import ThemeContext from '../ThemeContext'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import styles from './Projects.module.css'
+import portfolioImg from '../assets/portfolio.png'
+import ecommerceImg from '../assets/ecommerce.png'
 
 function Projects() {
     const [projectData, setProjectData] = useState(null)
@@ -12,24 +14,35 @@ function Projects() {
         .then(data => setProjectData(data))
     }, [])
     const { darkMode } = useContext(ThemeContext)
+    const projectImages = {
+        "Portfolio website": portfolioImg,
+        "MERN Ecommerce": ecommerceImg
+    }
     return (
         <div style={{ padding: '60px 40px', backgroundColor: darkMode ? '#1a1a1a' : '#ffffff', minHeight: '100vh'}}>
 
             <h1 style={{ color: darkMode ? 'white' : '#111', fontSize: '48px'}}>My Projects</h1>
 
             {projectData ? (
-                projectData.map((project)=>(
+                <div className={styles.grid}>
+                {projectData.map((project)=>(
                     <div className={`${styles.projectCard} ${darkMode ? styles.projectCardDark : styles.projectCardLight}`} key={project.id}>
-                        <h3 className={`${styles.projectTitle} ${darkMode ? styles.projectTitleDark : styles.projectTitleLight}`}>{project.project}</h3>
-                        <p className={`${styles.projectDes} ${darkMode ? styles.projectDesDark : styles.projectDesLight}`}>{project.description}</p>
+
+                    <div className={styles.imageWrapper}>
+                        <img src={projectImages[project.project]} alt={project.project} className={styles.projectImage} />
+                        <div className={styles.techBadgeWrapper}>
                         {project.techStack.map((tech) => (
                             <span key={tech} className={`${styles.techBadge} ${darkMode ? styles.techBadgeDark : styles.techBadgeLight}`}>{tech}</span>
                         ))}
+                    </div>
+                </div>
+                        <h3 className={`${styles.projectTitle} ${darkMode ? styles.projectTitleDark : styles.projectTitleLight}`}>{project.project}</h3>
+                        <p className={`${styles.projectDes} ${darkMode ? styles.projectDesDark : styles.projectDesLight}`}>{project.description}</p>
                         <a className={`${styles.githubLink}`} href={project.githubLink}>My GitHub Link</a>
-
                         <a className={`${styles.liveLink}`} href={project.liveLink}>My Live link</a>
                     </div>
-                ))
+                ))}
+            </div>
             ) : (
                 <p>Loading projects...</p>
             )}

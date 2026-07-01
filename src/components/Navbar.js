@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom"
 import styles from './Navbar.module.css'
 import ThemeContext from "../ThemeContext"
 import { useContext } from "react"
+import { BsSun, BsMoon } from "react-icons/bs"
 
 
 function Navbar(){
@@ -11,19 +12,22 @@ function Navbar(){
         <nav className={`${styles.navbar} ${darkMode ? styles.dark : styles.light}`}>
 
             <NavLink to="/" className={`${styles.logo} ${darkMode ? styles.dark : styles.light}`}   
-            >Kheiroum</NavLink>
+            >Kheiroum DevPortfolio</NavLink>
 
             <div className={styles.navlinks}>
+
+                <NavLink to="/" className={`${styles.link} ${darkMode ? styles.dark : styles.lightText}`}>Home</NavLink>
+
                 <NavLink to="/about" className={`${styles.link} ${darkMode ? styles.dark : styles.lightText}`}>About</NavLink>
 
                 <NavLink to="/projects" className={`${styles.link} ${darkMode ? styles.dark : styles.lightText}`}>Projects</NavLink>
 
                 <NavLink to="/contact" className={`${styles.link} ${darkMode ? styles.dark : styles.lightText}`}>Contact</NavLink>
 
-                <button onClick={() => setdarkMode(!darkMode)} className={styles.toggleBtn} style={{ border:`1px solid ${darkMode ? 'white' : '#111'}`, color: darkMode ? 'white' : '#111' }}>
-                    {darkMode ? '☀️ Light' : '🌙 Dark'}</button>
-
             </div>
+                <button onClick={() => setdarkMode(!darkMode)} className={`${styles.toggleBtn} ${darkMode ? styles.toggleBtnDark : styles.toggleBtnLight}`} >
+                    {darkMode ? <BsSun/> : <BsMoon/>}</button>
+
         </nav>
     )
 }

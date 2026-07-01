@@ -20,11 +20,12 @@
     display: flex;
     gap: 28px;
     align-items: center;
+    margin: 0 auto;
 }
 
 .link {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
@@ -52,6 +53,16 @@
     cursor: pointer;
     font-size: 14px;
     transition: all 0.3s ease;
+    
+}
+
+.toggleBtnLight{
+    border: 2px solid #111;
+    color: #111;
+}
+.toggleBtnDark{
+    border: 2px solid white;
+    color: white;
 }
 
 .toggleBtn:hover {
@@ -74,4 +85,19 @@
 
 .lightText {
     color: #111111;
+}
+
+@media (max-width: 768px){
+    .logo {
+        font-size: 20px;
+    }
+    .navlinks{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .logo{
+        font-size: 16px;
+    }
 }
