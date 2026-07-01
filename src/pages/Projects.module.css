@@ -9,6 +9,8 @@
 }
 
 .projectCard{
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     border-radius: 12px;
     overflow: hidden;
@@ -34,6 +36,9 @@
     position: absolute;
     bottom: 4px;
     left: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
 }
 
 .techBadgeLight{
@@ -67,17 +72,33 @@
     font-size: 18px;
 }
 
-.githubLink{
-    display: block;
+.linkWrapper{
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.githubLink, .liveLink{
+    display: inline-block;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
     margin-top: 10px;
 }
 
-.liveLink{
-    display: block;
-    text-decoration: none;
-    margin-top: 10px;
+.githubLinkDark, .liveLinkDark{
+    background-color: #F2F2F2;
+    color: #262626;
 }
+
+.githubLinkLight, .liveLinkLight{
+    background-color:#292929;
+    color: #F5F5F5;
+}
+
+
 
 .grid{
     display: grid;

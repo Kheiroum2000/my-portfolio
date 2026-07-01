@@ -38,8 +38,11 @@ function Projects() {
                 </div>
                         <h3 className={`${styles.projectTitle} ${darkMode ? styles.projectTitleDark : styles.projectTitleLight}`}>{project.project}</h3>
                         <p className={`${styles.projectDes} ${darkMode ? styles.projectDesDark : styles.projectDesLight}`}>{project.description}</p>
-                        <a className={`${styles.githubLink}`} href={project.githubLink}>My GitHub Link</a>
-                        <a className={`${styles.liveLink}`} href={project.liveLink}>My Live link</a>
+                        <div className={styles.linkWrapper}>
+                        <a className={`${styles.githubLink} ${darkMode ? styles.githubLinkDark : styles.githubLinkLight}`} href={project.githubLink}>My GitHub Link</a>
+                        <a className={`${styles.liveLink} ${darkMode ? styles.liveLinkDark : styles.liveLinkLight}`} href={project.liveLink}>My Live link</a>
+
+                        </div>
                     </div>
                 ))}
             </div>
